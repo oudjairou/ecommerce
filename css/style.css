@@ -1,0 +1,97 @@
+:root{
+    --main-color:#EC221F;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Quicksand", sans-serif;
+    transition: all .2s linear;
+}
+nav{
+    background-color: var(--main-color);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+nav h1{
+color: rgb(13, 4, 4);
+font-size: 32px;
+}
+.panier{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+}
+.sgrille{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+.grille{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,180px);
+    column-gap: 40px;
+    row-gap: 70px;
+    max-width: 1300px;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    width: 180px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: gray 2px 0px 8px;
+    overflow: hidden;
+}
+.image{
+    width: 80%;
+    height: 120px;
+    overflow: hidden;
+}
+.image img:hover{
+    scale: 1.1;
+
+}
+.texte{
+    padding: 5px 10px 0px 10px;
+
+}
+.description{
+    font-size: 9px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.prix{
+    font-size: 12px;
+}
+.bouttons{
+    display: flex;
+    margin-top: 8px;
+    padding-left: 10px;
+}
+button{
+    font-size: 11px;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+button:hover{
+    cursor: pointer;
+    letter-spacing: 1.1px;
+}
+.details{
+    background-color: var(--main-color);
+    color: white;
+    margin-right: 10px;
+}
